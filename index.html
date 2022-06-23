@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <div id="container">
-      <h1 for="text"><i data-feather="minimize-2"></i> Conversor de Texto</h1>
+      <h1 for="text">
+        <img
+          src="./logo.png"
+          alt="Logo representada pela letra C"
+          class="logo"
+        />
+        Conversor de Texto
+      </h1>
       <input
         type="text"
         id="inputConvert"
@@ -35,7 +41,7 @@
             <p id="resultFirstLetter"></p>
 
             <span class="tooltiptext" id="myTooltip">Clique para copiar</span>
-            <i data-feather="copy"></i>
+            <img src="./copy.svg" alt="Copiar" class="copy" />
           </button>
         </div>
       </div>
@@ -50,15 +56,12 @@
             <p id="resultUpper"></p>
 
             <span class="tooltiptext" id="myTooltip2">Clique para copiar</span>
-            <i data-feather="copy"></i>
+            <img src="./copy.svg" alt="Copiar" class="copy" />
           </button>
         </div>
       </div>
     </div>
   </body>
 
-  <script>
-    feather.replace();
-  </script>
   <script src="./script.js"></script>
 </html>

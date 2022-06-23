@@ -13,26 +13,41 @@ body {
   justify-content: center;
 }
 
-h1 {
-  font-size: 2em;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 10px;
-  text-transform: uppercase;
-  color: #8257e5;
-}
-
 #container {
   width: 100%;
   max-width: 500px;
   flex-direction: column;
 
   margin: 0 auto;
-  margin-top: 20px;
   padding: 50px;
   border-radius: 5px;
 
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #8257e5;
+
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.copy {
+  width: 24px;
+  height: 24px;
 }
 
 .btn {
@@ -165,4 +180,16 @@ input:focus {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #result {
+    width: 100%;
+    max-width: 300px;
+  }
 }

@@ -180,3 +180,8 @@ html {
   border-radius: 10px;
   border: 10px solid #8257e5;
 }
+
+*::selection {
+  color: #fff;
+  background-color: #996dff;
+}

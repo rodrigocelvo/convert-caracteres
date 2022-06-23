@@ -50,6 +50,9 @@ function copiarTexto(type) {
 }
 
 function handleTooltip() {
+  tooltip.style.backgroundColor = "#09090a";
+  tooltip2.style.backgroundColor = "#09090a";
+
   tooltip.innerHTML = "Clique para copiar";
   tooltip2.innerHTML = "Clique para copiar";
 }
