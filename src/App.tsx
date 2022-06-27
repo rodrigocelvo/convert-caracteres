@@ -56,7 +56,7 @@ function App() {
           <p className="text-3xl text-purple-500">CONVERSOR DE TEXTOS</p>
         </header>
 
-        <div className="mt-10 w-[30rem] xl:w-[50rem] lg:w-[45rem] md:w-[40rem] sm:w-[30rem]">
+        <div className="mt-10 w-[25rem] sm:w-[30rem] md:w-[40rem] lg:w-[45rem] xl:w-[50rem]">
           <label className="block">
             <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-gray-500">
               Texto
