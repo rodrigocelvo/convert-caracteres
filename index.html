@@ -2,66 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/src/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conversor de textos para letras masiusculas</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>Convertex - Conversor de Textos</title>
   </head>
   <body>
-    <div id="container">
-      <h1 for="text">
-        <img
-          src="./logo.png"
-          alt="Logo representada pela letra C"
-          class="logo"
-        />
-        Conversor de Texto
-      </h1>
-      <input
-        type="text"
-        id="inputConvert"
-        placeholder="Inisira o texto a ser convertido..."
-        onchange="handleConvert()"
-      />
-      <button id="buttonConvert" onclick="handleConvert()" class="btn">
-        Converter
-      </button>
-    </div>
-
-    <div id="result" class="show">
-      <div class="wrapper">
-        <div class="tooltip">
-          <button
-            class="copiar"
-            onClick="copiarTexto(type = 'first')"
-            onmouseout="handleTooltip()"
-          >
-            <p id="resultFirstLetter"></p>
-
-            <span class="tooltiptext" id="myTooltip">Clique para copiar</span>
-            <img src="./copy.svg" alt="Copiar" class="copy" />
-          </button>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="tooltip">
-          <button
-            class="copiar"
-            onClick="copiarTexto(type = 'upper')"
-            onmouseout="handleTooltip()"
-          >
-            <p id="resultUpper"></p>
-
-            <span class="tooltiptext" id="myTooltip2">Clique para copiar</span>
-            <img src="./copy.svg" alt="Copiar" class="copy" />
-          </button>
-        </div>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-
-  <script src="./script.js"></script>
 </html>
