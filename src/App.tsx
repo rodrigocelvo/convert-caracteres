@@ -46,22 +46,19 @@ function App() {
   }
 
   return (
-    <div className="text-gray-100 flex justify-center items-center w-screen h-screen mt-5 md:mt-0">
+    <div className="text-gray-100 flex justify-center items-center w-screen h-screen mt-5 md:mt-0 ">
       <div className="flex flex-col items-center">
         <header className="mt-10 flex flex-row items-center">
           <img
             src={LogoImg}
-            className="w-8 mr-2"
+            className="w-6 md:w-8 mr-2"
             alt="Logo representada pela letra C"
           />
-          <p className="text-3xl text-purple-500">CONVERSOR DE TEXTOS</p>
+          <p className="text-2xl md:text-3xl text-purple-500">
+            CONVERSOR DE TEXTOS
+          </p>
         </header>
-
-        {
-          //w-[20rem] sm:w-[30rem] md:w-[40rem] lg:w-[45rem] xl:w-[50rem]
-        }
-
-        <div className="mt-10 w-full xl:w-[800px] lg:w-[800px] md:w-[600px] sm:w-[300px]">
+        <div className="mt-10 w-[300px] xl:w-[800px] lg:w-[800px] md:w-[600px] sm:w-[300px]">
           <label className="block">
             <span className="flex flex-row justify-between">
               <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-gray-500">
@@ -86,19 +83,19 @@ function App() {
           <div className="flex flex-col md:flex-row gap-2 mt-2  items-center justify-between">
             <button
               onClick={() => handleConvertToUpperCase(convertText)}
-              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[400px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
+              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[300px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center justify-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
             >
               MAIÚSCULAS
             </button>
             <button
               onClick={() => handleConvertToLowercase(convertText)}
-              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[400px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
+              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[300px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center justify-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
             >
               minúsculas
             </button>
             <button
               onClick={() => handleConvertToTitleCase(convertText)}
-              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[400px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
+              className="bg-neutral-800 hover:bg-neutral-700 p-[20px] w-[300px] sm:w-[300px] md:w-auto lg:w-[150px] h-[30px] flex items-center justify-center rounded-[0.31rem] focus:ring-4 focus:outline-none focus:ring-neutral-600 font-medium"
             >
               Estilo Título
             </button>
@@ -106,7 +103,7 @@ function App() {
 
           <button
             onClick={() => handleCopyText(convertText)}
-            className="bg-violet-500 hover:bg-violet-600 p-[20px] w-[400px] sm:w-[300px] md:w-[410px] lg:w-[150px] h-[30px] flex justify-center items-center rounded-[0.31rem] font-bold disabled:bg-green-600 disabled:cursor-not-allowed active:ring-4 focus:ring-4 focus:outline-none focus:ring-violet-900 active:ring-violet-900 active:disabled:ring-green-900 disabled:opacity-70"
+            className="bg-violet-500 hover:bg-violet-600 p-[20px] w-[300px] sm:w-[300px] md:w-[410px] lg:w-[150px] h-[30px] flex justify-center items-center rounded-[0.31rem] font-bold disabled:bg-green-600 disabled:cursor-not-allowed active:ring-4 focus:ring-4 focus:outline-none focus:ring-violet-900 active:ring-violet-900 active:disabled:ring-green-900 disabled:opacity-70"
             disabled={copied}
           >
             {copied ? "Copiado!" : "Copiar"}
