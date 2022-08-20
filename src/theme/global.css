@@ -9,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #121214;
 }
 
 code {
@@ -17,21 +16,49 @@ code {
     monospace;
 }
 
-* {
+.light {
+  background-color: #f3f4f6;
+}
+
+.dark {
+  background-color: #121214;
+}
+
+.light * {
   scrollbar-width: auto;
   scrollbar-color: #a855f7 #09090a;
 }
 
-::-webkit-scrollbar {
+.light ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-::-webkit-scrollbar-track {
+.light ::-webkit-scrollbar-track {
+  background: #eeeef0;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background-color: #a855f7;
+  border-radius: 10px;
+  border: 10px solid rgb(158, 158, 158);
+}
+
+.dark * {
+  scrollbar-width: auto;
+  scrollbar-color: #a855f7 #09090a;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.dark ::-webkit-scrollbar-track {
   background: #121214;
 }
 
-::-webkit-scrollbar-thumb {
+.dark ::-webkit-scrollbar-thumb {
   background-color: #a855f7;
   border-radius: 10px;
   border: 10px solid #222;
@@ -40,4 +67,14 @@ code {
 ::selection {
   color: #fff;
   background-color: #a855f7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
